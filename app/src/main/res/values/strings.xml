@@ -8,4 +8,6 @@
     <string name="password_label">Wprowadź hasło</string>
     <string name="confirm">Zatwierdź</string>
     <string name="waiting">Oczekuję</string>
+    <string name="search_category">Lupa</string>
+    <string name="search">Search</string>
 </resources>

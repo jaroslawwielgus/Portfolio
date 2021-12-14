@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/light_navy_blue"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/me_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_shape"
+            android:text="Me"
+            android:textSize="20sp" >
+
+        </Button>
+
+        <ImageView
+            android:id="@+id/search_image"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/search_category"
+            app:srcCompat="@android:drawable/ic_search_category_default">
+
+        </ImageView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/search"
+            android:textAlignment="center"
+            android:textSize="20sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+</layout>

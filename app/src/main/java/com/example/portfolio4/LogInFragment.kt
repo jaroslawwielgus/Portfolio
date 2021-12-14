@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.portfolio4.databinding.FragmentLogInBinding
 
 class LogInFragment: Fragment() {
@@ -49,7 +50,7 @@ class LogInFragment: Fragment() {
 
          */
 
-        binding.confirmButton.setOnClickListener {
+        binding.confirmButton.setOnClickListener { v:View ->
             var checkEmailWithPassword = true
             /*
             if ((binding.emailEditText.text)?.equals("") == true) {
@@ -83,6 +84,8 @@ class LogInFragment: Fragment() {
                         emailTextField.error = "poprawny"
                         passwordTextField.error = "poprawne"
                     }
+                    v.findNavController().navigate(LogInFragmentDirections.actionLogInFragmentToSearchingFragment())
+
                 } else {
                     binding.apply {
                         emailTextField.error = "Niepoprawny"

@@ -28,7 +28,25 @@
         <action
             android:id="@+id/action_logInFragment_to_selectLogInFragment"
             app:destination="@id/selectLogInFragment"
+            app:exitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/selectLogInFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_logInFragment_to_searchingFragment"
+            app:destination="@id/searchingFragment"
+            app:enterAnim="@anim/slide_in_right"
             app:popUpTo="@id/selectLogInFragment"
             app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchingFragment"
+        android:name="com.example.portfolio4.SearchingFragment"
+        android:label="SearchingFragment" >
+        <action
+            android:id="@+id/action_searchingFragment_to_selectLogInFragment"
+            app:destination="@id/selectLogInFragment"
+            app:exitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/selectLogInFragment"
+            app:popUpToInclusive="false" />
     </fragment>
 </navigation>

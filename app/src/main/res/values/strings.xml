@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Portfolio_2</string>
+    <string name="eportfolio">ePortfolio</string>
+    <string name="logging">Zaloguj się</string>
+    <string name="register">Zarejestruj się</string>
+    <string name="email_label">Wprowadź</string>
+    <string name="confirm">Zatwierdź</string>
+    <string name="waiting">Oczekuję</string>
+</resources>

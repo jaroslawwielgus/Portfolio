@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.portfolio4.TitleFragment">
+        <action
+            android:id="@+id/action_titleFragment_to_selectLogInFragment"
+            app:destination="@id/selectLogInFragment"
+            app:enterAnim="@anim/slide_in_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectLogInFragment"
+        android:name="com.example.portfolio4.SelectLogInFragment">
+        <action
+            android:id="@+id/action_selectLogInFragment_to_logInFragment"
+            app:destination="@id/logInFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popUpTo="@id/selectLogInFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.portfolio4.LogInFragment">
+        <action
+            android:id="@+id/action_logInFragment_to_selectLogInFragment"
+            app:destination="@id/selectLogInFragment"
+            app:popUpTo="@id/selectLogInFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

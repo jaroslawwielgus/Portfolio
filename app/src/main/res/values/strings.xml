@@ -3,7 +3,9 @@
     <string name="eportfolio">ePortfolio</string>
     <string name="logging">Zaloguj się</string>
     <string name="register">Zarejestruj się</string>
-    <string name="email_label">Wprowadź</string>
+    <string name="em_pass_label">Wprowadź</string>
+    <string name="email_label">Wprowadź e-mail</string>
+    <string name="password_label">Wprowadź hasło</string>
     <string name="confirm">Zatwierdź</string>
     <string name="waiting">Oczekuję</string>
 </resources>

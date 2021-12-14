@@ -1,32 +1,21 @@
 package com.example.portfolio4
 
-import android.graphics.Color
 import android.os.Bundle
-import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
-import androidx.core.widget.doOnTextChanged
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import com.example.portfolio4.databinding.FragmentLogInBinding
 
 class LogInFragment: Fragment() {
 
+    private val email: String = "e@e.com"
+    private val password: String = "pass"
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding: FragmentLogInBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_log_in, container, false)
 
-        /*
-        // Get input text
-        val inputText = outlinedTextField.editText?.text.toString()
-
-        outlinedTextField.editText?.doOnTextChanged { inputText, _, _, _ ->
-            // Respond to input text change
-        }
-        */
         //if (binding.emailTextField.isActivated) {
             //binding.emailTextField.setHelperTextColor(Color.valueOf())
         //}
@@ -48,33 +37,67 @@ class LogInFragment: Fragment() {
 
          */
 
+        /* Initial validation
+
         binding.emailEditText.doOnTextChanged { text, start, before, count ->
             if (!text!!.contains('@')) {
-                binding.emailTextField.error = "Use '@'"
+                binding.emailTextField.error = "Wykorzystaj '@'"
             } else {
                 binding.emailTextField.error = null;
             }
         }
 
+         */
+
         binding.confirmButton.setOnClickListener {
-            if (binding.emailEditText.text == null) {
-                binding.emailTextField.error = "Empty email"
+            var checkEmailWithPassword = true
+            /*
+            if ((binding.emailEditText.text)?.equals("") == true) {
+                binding.apply {
+                    emailTextField.error = "Puste"
+                    checkEmailWithPassword = false;
+                }
             }
-            if (binding.passwordEditText.text == null) {
-                binding.passwordTextField.error = "Empty password"
+            if ((binding.passwordEditText.text)?.equals("") == true) {
+                binding.apply {
+                    emailTextField.error = "Pusty"
+                    checkEmailWithPassword = false;
+                }
+            }
+
+
+            binding.emailEditText.doOnTextChanged { text, start, before, count ->
+                if (!text!!.contains('@')) {
+                    binding.emailTextField.error = "Wykorzystaj '@'"
+                } else {
+                    binding.emailTextField.error = null;
+                }
+            }
+            */
+
+            if (checkEmailWithPassword) {
+                if ((binding.emailTextField.editText?.text.toString()).equals(email) == true
+                    && (binding.passwordTextField.editText?.text.toString()).equals(password) == true) {
+                    //go to next screen
+                    binding.apply {
+                        emailTextField.error = "poprawny"
+                        passwordTextField.error = "poprawne"
+                    }
+                } else {
+                    binding.apply {
+                        emailTextField.error = "Niepoprawny"
+                        passwordTextField.error = "Niepoprawne"
+                    }
+                }
             }
         }
+
 
         return binding.root
     }
 
-
     private fun validateEmptyForm(view: View) {
 
     }
-
-
-
-    //comment
 
 }

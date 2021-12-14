@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/layout_margin"
-            android:hint="@string/email_label"
+            android:hint="@string/password_label"
             app:boxStrokeColor="@color/mtrl_outlined_stroke_color"
             app:boxStrokeWidth="2dp"
             app:boxStrokeWidthFocused="3dp"

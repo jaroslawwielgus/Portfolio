@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import com.example.portfolio4.TitleFragmentDirections
 import com.example.portfolio4.databinding.FragmentTitleBinding
 
 class TitleFragment: Fragment() {

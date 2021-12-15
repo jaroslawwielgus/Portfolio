@@ -4,48 +4,191 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="@color/light_navy_blue"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/me_button"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/round_shape"
-            android:text="Me"
-            android:textSize="20sp" >
-
-        </Button>
-
-        <ImageView
-            android:id="@+id/search_image"
-            android:layout_width="wrap_content"
-            android:layout_height="55dp"
-            android:layout_marginStart="3dp"
-            android:layout_marginTop="30dp"
-            android:contentDescription="@string/search_category"
-            app:srcCompat="@android:drawable/ic_search_category_default">
-
-        </ImageView>
-
-        <EditText
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:autofillHints="no"
-            android:background="@color/white"
-            android:fontFamily="@font/roboto_light"
-            android:hint="@string/search"
-            android:inputType="textPersonName"
-            android:textAlignment="center"
-            android:textSize="20sp">
+            android:layout_height="120dp"
+            android:background="@color/light_navy_blue"
+            android:layout_gravity="center_horizontal">
 
-        </EditText>
+            <Button
+                android:id="@+id/me_button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_round_shape"
+                android:text="Me"
+                android:textSize="20sp">
+
+            </Button>
+
+            <ImageView
+                android:id="@+id/search_image"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="32dp"
+                android:layout_toEndOf="@+id/me_button"
+                android:contentDescription="@string/search_category"
+                app:srcCompat="@android:drawable/ic_search_category_default">
+
+            </ImageView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/search_image"
+                android:autofillHints="no"
+                android:background="@color/white"
+                android:fontFamily="@font/roboto_light"
+                android:hint="@string/search"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </EditText>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/workers_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/worker_name1"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name2"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name3"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name4"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name5"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name6"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name7"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name8"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name9"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name10"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name11"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name12"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name13"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name14"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+                <Button
+                    android:id="@+id/worker_name15"
+                    style="@style/FoundWorkersStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Kowalski">
+                </Button>
+
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
-
 </layout>

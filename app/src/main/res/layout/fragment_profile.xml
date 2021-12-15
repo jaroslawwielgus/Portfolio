@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/profile_scroll"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:shapeAppearanceOverlay="@style/Circular"
+                    android:src="@drawable/profile1_image"
+                    android:contentDescription="@string/profile">
+
+                </com.google.android.material.imageview.ShapeableImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jan Nowak"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="21dp"
+                    android:layout_marginTop="@dimen/small_padding"
+                    android:paddingBottom="@dimen/small_padding">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Web developer w ABCD"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_light_medium"
+                    android:textSize="18dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PL,Wrocław,Dolnośląskie"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_light_medium"
+                    android:textSize="18dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginBottom="@dimen/small_padding">
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+</layout>

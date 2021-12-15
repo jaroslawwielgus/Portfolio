@@ -80,10 +80,6 @@ class LogInFragment: Fragment() {
                 if ((binding.emailTextField.editText?.text.toString()).equals(email) == true
                     && (binding.passwordTextField.editText?.text.toString()).equals(password) == true) {
                     //go to next screen
-                    binding.apply {
-                        emailTextField.error = "poprawny"
-                        passwordTextField.error = "poprawne"
-                    }
                     v.findNavController().navigate(LogInFragmentDirections.actionLogInFragmentToSearchingFragment())
 
                 } else {

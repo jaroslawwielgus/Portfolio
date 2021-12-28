@@ -11,7 +11,8 @@
         <action
             android:id="@+id/action_titleFragment_to_selectLogInFragment"
             app:destination="@id/selectLogInFragment"
-            app:enterAnim="@anim/slide_in_right" />
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_in_left" />
     </fragment>
     <fragment
         android:id="@+id/selectLogInFragment"
@@ -20,9 +21,8 @@
             android:id="@+id/action_selectLogInFragment_to_logInFragment"
             app:destination="@id/logInFragment"
             app:enterAnim="@anim/slide_in_right"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popUpTo="@id/selectLogInFragment"
-            app:popUpToInclusive="false" />
+            app:exitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/selectLogInFragment" />
     </fragment>
     <fragment
         android:id="@+id/logInFragment"
@@ -31,9 +31,8 @@
             android:id="@+id/action_logInFragment_to_searchingFragment"
             app:destination="@id/searchingFragment"
             app:enterAnim="@anim/slide_in_right"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popUpTo="@id/selectLogInFragment"
-            app:popUpToInclusive="false" />
+            app:exitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/selectLogInFragment" />
     </fragment>
     <fragment
         android:id="@+id/searchingFragment"
@@ -42,9 +41,8 @@
             android:id="@+id/action_searchingFragment_to_profileFragment"
             app:destination="@id/profileFragment"
             app:enterAnim="@anim/slide_in_right"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popUpTo="@id/searchingFragment"
-            app:popUpToInclusive="false" />
+            app:exitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/searchingFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"

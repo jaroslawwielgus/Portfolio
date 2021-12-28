@@ -221,26 +221,14 @@
 
                     <TextView
                         android:id="@+id/mtrl_list_item_text_lang1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingEnd="@dimen/padding"
-                        android:paddingTop="@dimen/small_padding"
-                        android:maxLines="1"
-                        android:textAppearance="?attr/textAppearanceSubtitle1"
-                        android:textColor="@color/black"
-                        android:text="POLSKI"/>
+                        style="@style/LanguageNameStyle"
+                        android:text="POLSKI" />
 
                     <TextView
                         android:id="@+id/mtrl_list_item_secondary_text_level1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/LanguageLevelStyle"
                         android:layout_below="@id/mtrl_list_item_text_lang1"
-                        android:layout_gravity="center_vertical"
-                        android:paddingEnd="16dp"
-                        android:maxLines="2"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="@color/black"
-                        android:text="Język ojczysty"/>
+                        android:text="Język ojczysty" />
 
                 </RelativeLayout>
 
@@ -249,25 +237,13 @@
 
                     <TextView
                         android:id="@+id/mtrl_list_item_text_lang2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingEnd="@dimen/padding"
-                        android:paddingTop="@dimen/small_padding"
-                        android:maxLines="1"
-                        android:textAppearance="?attr/textAppearanceSubtitle1"
-                        android:textColor="@color/black"
-                        android:text="ANGIELSKI"/>
+                        style="@style/LanguageNameStyle"
+                        android:text="ANGIELSKI" />
 
                     <TextView
                         android:id="@+id/mtrl_list_item_secondary_text_level2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:layout_below="@id/mtrl_list_item_text_lang2"
-                        android:layout_gravity="center_vertical"
-                        android:paddingEnd="16dp"
-                        android:maxLines="2"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="@color/black"
+                        style="@style/LanguageLevelStyle"
                         android:text="Pełna biegłość zawodowa"/>
 
                 </RelativeLayout>
@@ -277,25 +253,13 @@
 
                     <TextView
                         android:id="@+id/mtrl_list_item_text_lang3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingEnd="@dimen/padding"
-                        android:paddingTop="@dimen/small_padding"
-                        android:maxLines="1"
-                        android:textAppearance="?attr/textAppearanceSubtitle1"
-                        android:textColor="@color/black"
+                        style="@style/LanguageNameStyle"
                         android:text="NIEMIECKI"/>
 
                     <TextView
                         android:id="@+id/mtrl_list_item_secondary_text_level3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
                         android:layout_below="@id/mtrl_list_item_text_lang3"
-                        android:layout_gravity="center_vertical"
-                        android:paddingEnd="16dp"
-                        android:maxLines="2"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="@color/black"
+                        style="@style/LanguageLevelStyle"
                         android:text="Biegłość na poziomie zaawansowanym"/>
 
                 </RelativeLayout>
@@ -323,8 +287,7 @@
                         android:id="@+id/activity1_description"
                         android:layout_below="@id/activity1"
                         style="@style/JobDescriptionStyle"
-                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs. sachjsadjdhm abjhacbha cjashfb akjhdabkic."
-                        />
+                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs. sachjsadjdhm abjhacbha cjashfb akjhdabkic." />
 
                 </RelativeLayout>
 

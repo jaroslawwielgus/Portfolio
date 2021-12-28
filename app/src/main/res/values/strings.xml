@@ -11,4 +11,9 @@
     <string name="search_category">Lupa</string>
     <string name="search">Szukaj</string>
     <string name="profile">Profil</string>
+    <string name="about_me"><u>O mnie</u></string>
+    <string name="experience"><u>Doświadczenie</u></string>
+    <string name="education"><u>Wykształcenie</u></string>
+    <string name="activity"><u>Aktywność</u></string>
+    <string name="languages"><u>Języki</u></string>
 </resources>

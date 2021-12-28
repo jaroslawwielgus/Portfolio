@@ -48,5 +48,21 @@
             app:exitAnim="@anim/slide_in_left"
             app:popUpTo="@id/selectLogInFragment"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_searchingFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popUpTo="@id/selectLogInFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.portfolio4.ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_searchingFragment"
+            app:destination="@id/searchingFragment"
+            app:exitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/searchingFragment"
+            app:popUpToInclusive="false" />
     </fragment>
 </navigation>

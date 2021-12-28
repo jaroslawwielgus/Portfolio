@@ -63,7 +63,7 @@
                     android:fontFamily="@font/roboto_light_medium"
                     android:paddingTop="2dp"
                     android:paddingBottom="2dp"
-                    android:text="PL,Wrocław,Dolnośląskie"
+                    android:text="PL, Wrocław, Dolnośląskie"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
@@ -329,7 +329,8 @@
                         android:id="@+id/activity3_description"
                         android:layout_below="@id/activity3"
                         style="@style/JobDescriptionStyle"
-                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs." />
+                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs."
+                        android:layout_marginBottom="@dimen/small_padding"/>
 
                 </RelativeLayout>
 

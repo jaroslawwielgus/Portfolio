@@ -75,6 +75,7 @@ class LogInFragment: Fragment() {
         var languages_u4 = listOf<Language>(language1_u4, language2_u4)
 
         //users' activities
+
         val activity1_u1 = Activity(1, "Moja stronka 1", "www.github.com/ap/1", "zxajfdscuicbdjsch,uv dsbu,jsdvdfs sdfvdf dsfgdfsvdsvdsvdsveds asdfmjmvcdsjyhcdshjhjcvdsb,jds")
         val activity2_u1 = Activity(2, "Moja stronka 2", "www.github.com/ap/2", "sajdfuhwsd,j ajsdfuiwesa eqwukjsahfliuews nfliwjshfliukecwds nmfewuksjfuiwekds fjvewliusjhlwe nasjh,zfuckewds redilhpbotrfdewasyu")
         val activity3_u1 = Activity(3, "Fajne szablony", "www.xyz.com/patterns/z", "sahdygukaz na,ukfskuds, ,asjfiud,swb nme,ajdfiu,jesd ,jasfb,jkds ,jksdjgb kjhauihfslabk pwoqwpwqurewfbjw e,jhrbufiwes")

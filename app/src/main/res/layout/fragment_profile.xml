@@ -3,6 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+        <variable
+            name="user"
+            type="com.example.portfolio4.User" />
+    </data>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,7 +42,7 @@
                     android:layout_marginTop="@dimen/small_padding"
                     android:fontFamily="@font/roboto_medium"
                     android:paddingBottom="@dimen/small_padding"
-                    android:text="Jan Nowak"
+                    android:text="@{user.name + ` ` + user.surname}"
                     android:textColor="@color/black"
                     android:textSize="21sp"
                     android:textStyle="bold"/>
@@ -48,7 +54,7 @@
                     android:fontFamily="@font/roboto_light_medium"
                     android:paddingTop="2dp"
                     android:paddingBottom="2dp"
-                    android:text="Web developer w ABCD"
+                    android:text="@{user.jobs.get(0).title + ` w ` + user.jobs.get(0).company}"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold">
@@ -63,7 +69,7 @@
                     android:fontFamily="@font/roboto_light_medium"
                     android:paddingTop="2dp"
                     android:paddingBottom="2dp"
-                    android:text="PL, Wrocław, Dolnośląskie"
+                    android:text="@{user.jobs.get(0).country + `, ` + user.jobs.get(0).town + `, ` + user.jobs.get(0).voivodeship}"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
@@ -83,7 +89,7 @@
                     android:fontFamily="@font/roboto_light"
                     android:paddingStart="@dimen/padding"
                     android:paddingEnd="@dimen/padding"
-                    android:text="samdfndjsf asjfdnv,kdfjsn akjfsdbv,dsj ajdfbd,sj anjsdfbsj,n ajf,bjsjbcba,kj jdjasdjeajkdjkwd. dakjjhea,,dwluifn jkaabjfw,dkjsbc,kadbswj,bcb,kjdsjkjasdjkbds   kjbadfkewskkjesbkjewksc  jjkcsjkcsd-c-snvn,sj,jj   bcj sj csj ciuscjjk"
+                    android:text="@{user.my_description}"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -100,19 +106,19 @@
                     <TextView
                         android:id="@+id/work1"
                         style="@style/HeaderWorkStyle"
-                        android:text="Praca1" />
+                        android:text="@{user.jobs.get(0).title}" />
 
                     <TextView
                         android:id="@+id/company1"
                         style="@style/HeaderCompanyStyle"
-                        android:text="Firma1" />
+                        android:text="@{user.jobs.get(0).company}" />
 
                     <TextView
                         android:id="@+id/work1_description"
                         style="@style/JobDescriptionStyle"
                         android:layout_below="@id/work1"
                         android:layout_toStartOf="@id/company1"
-                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs. sachjsadjdhm abjhacbha cjashfb akjhdabkic." />
+                        android:text="@{user.jobs.get(0).description}" />
 
                 </RelativeLayout>
 

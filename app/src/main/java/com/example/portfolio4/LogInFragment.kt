@@ -19,6 +19,11 @@ class LogInFragment: Fragment() {
 
     private lateinit var users: List<User>
 
+    companion object {
+        var foundUser: User? = null
+    }
+
+
     private fun addUsers() {
         //users' jobs
         val job1_u1 = Job(1, "Web developer", "ABC", "Implementing askfhkbdwj  afkbsw,jfjw wjhfkubew uiwfwe fuibwf weuifwf wufbwek wkjgfbkwe whjkfbkwe akjfgkydw w,jhfbkuej", "PL", "Wrocław", "Dolnośląskie")
@@ -177,19 +182,20 @@ class LogInFragment: Fragment() {
             }
             */
 
-            var found: Boolean = false
+            var isFound: Boolean = false
 
             if (checkEmailWithPassword) {
                 for(i in users) {
                     if ((binding.emailTextField.editText?.text.toString()).equals(i.email) == true
                         && (binding.passwordTextField.editText?.text.toString()).equals(i.password) == true) {
-                        found = true
+                        isFound = true
+                        foundUser = i
                         //go to next screen
                         v.findNavController().navigate(LogInFragmentDirections.actionLogInFragmentToSearchingFragment())
                         break
                     }
                 }
-                if (!found) {
+                if (!isFound) {
                     binding.apply {
                         emailTextField.error = "Niepoprawny"
                         passwordTextField.error = "Niepoprawne"

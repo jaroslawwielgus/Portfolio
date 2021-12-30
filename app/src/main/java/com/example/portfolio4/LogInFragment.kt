@@ -72,7 +72,7 @@ class LogInFragment: Fragment() {
 
         val language1_u3 = language1_u1
         val language2_u3 = Language(5, "ANGIELSKI", "Biegłość na poziomie zaawansowanym")
-        val language3_u3 = Language(6, "Francuski", "Pełna biegłość zawodowa")
+        val language3_u3 = Language(6, "FRANCUSKI", "Pełna biegłość zawodowa")
         var languages_u3 = listOf<Language>(language1_u3, language2_u3, language3_u3)
 
         val language1_u4 = language1_u1

@@ -98,251 +98,71 @@
                     android:id="@+id/experience_header"
                     style="@style/HeadersForWorkersInfoStyle"
                     android:layout_marginTop="@dimen/small_padding"
+                    android:layout_marginBottom="@dimen/small_padding"
                     android:text="@string/experience" />
 
-                <RelativeLayout
-                    style="@style/WorkersInfoRelativeLayoutStyle">
+                <LinearLayout
+                    android:id="@+id/jobs_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/layout_margin"
+                    android:layout_marginEnd="@dimen/layout_margin">
 
-                    <TextView
-                        android:id="@+id/work1"
-                        style="@style/HeaderWorkStyle"
-                        android:text="@{user.jobs.get(0).title}" />
-
-                    <TextView
-                        android:id="@+id/company1"
-                        style="@style/HeaderCompanyStyle"
-                        android:text="@{user.jobs.get(0).company}" />
-
-                    <TextView
-                        android:id="@+id/work1_description"
-                        style="@style/JobDescriptionStyle"
-                        android:layout_below="@id/work1"
-                        android:layout_toStartOf="@id/company1"
-                        android:text="@{user.jobs.get(0).description}" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    style="@style/WorkersInfoRelativeLayoutStyle">
-
-                    <TextView
-                        android:id="@+id/work2"
-                        style="@style/HeaderWorkStyle"
-                        android:text="Praca2" />
-
-                    <TextView
-                        android:id="@+id/company2"
-                        style="@style/HeaderCompanyStyle"
-                        android:text="Firma2" />
-
-                    <TextView
-                        android:id="@+id/work2_description"
-                        android:layout_below="@id/work2"
-                        android:layout_toStartOf="@id/company2"
-                        style="@style/JobDescriptionStyle"
-                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs." />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    style="@style/WorkersInfoRelativeLayoutStyle">
-
-                    <TextView
-                        android:id="@+id/work3"
-                        style="@style/HeaderWorkStyle"
-                        android:text="Praca3" />
-
-                    <TextView
-                        android:id="@+id/company3"
-                        style="@style/HeaderCompanyStyle"
-                        android:text="Firma3" />
-
-                    <TextView
-                        android:id="@+id/work3_description"
-                        android:layout_below="@id/work3"
-                        android:layout_toStartOf="@id/company3"
-                        style="@style/JobDescriptionStyle"
-                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs." />
-
-                </RelativeLayout>
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/education_header"
                     style="@style/HeadersForWorkersInfoStyle"
                     android:layout_marginTop="@dimen/small_padding"
+                    android:layout_marginBottom="@dimen/small_padding"
                     android:text="@string/education" />
 
-                <RelativeLayout
-                    style="@style/WorkersInfoRelativeLayoutStyle">
+                <LinearLayout
+                    android:id="@+id/education_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/layout_margin"
+                    android:layout_marginEnd="@dimen/layout_margin">
 
-                    <TextView
-                        android:id="@+id/university1"
-                        style="@style/HeaderWorkStyle"
-                        android:text="Uczelnia1" />
-
-                    <TextView
-                        android:id="@+id/field_of_study1"
-                        style="@style/HeaderCompanyStyle"
-                        android:text="Kierunek1"/>
-
-                    <TextView
-                        android:id="@+id/studies1_description"
-                        style="@style/JobDescriptionStyle"
-                        android:layout_below="@id/university1"
-                        android:layout_toStartOf="@id/field_of_study1"
-                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs. sachjsadjdhm abjhacbha cjashfb akjhdabkic." />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    style="@style/WorkersInfoRelativeLayoutStyle">
-
-                    <TextView
-                        android:id="@+id/university2"
-                        style="@style/HeaderWorkStyle"
-                        android:text="Uczelnia2" />
-
-                    <TextView
-                        android:id="@+id/field_of_study2"
-                        style="@style/HeaderCompanyStyle"
-                        android:text="Kierunek2" />
-
-                    <TextView
-                        android:id="@+id/studies2_description"
-                        android:layout_below="@id/university2"
-                        android:layout_toStartOf="@id/field_of_study2"
-                        style="@style/JobDescriptionStyle"
-                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs." />
-
-                </RelativeLayout>
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/languages_header"
                     style="@style/HeadersForWorkersInfoStyle"
                     android:layout_marginTop="@dimen/small_padding"
+                    android:layout_marginBottom="@dimen/small_padding"
                     android:text="@string/languages" />
 
-                <RelativeLayout
-                    style="@style/WorkersInfoRelativeLayoutStyle">
+                <LinearLayout
+                    android:id="@+id/languages_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/layout_margin"
+                    android:layout_marginEnd="@dimen/layout_margin">
 
-                    <TextView
-                        android:id="@+id/mtrl_list_item_text_lang1"
-                        style="@style/LanguageNameStyle"
-                        android:text="POLSKI" />
-
-                    <TextView
-                        android:id="@+id/mtrl_list_item_secondary_text_level1"
-                        style="@style/LanguageLevelStyle"
-                        android:layout_below="@id/mtrl_list_item_text_lang1"
-                        android:text="Język ojczysty" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    style="@style/WorkersInfoRelativeLayoutStyle">
-
-                    <TextView
-                        android:id="@+id/mtrl_list_item_text_lang2"
-                        style="@style/LanguageNameStyle"
-                        android:text="ANGIELSKI" />
-
-                    <TextView
-                        android:id="@+id/mtrl_list_item_secondary_text_level2"
-                        android:layout_below="@id/mtrl_list_item_text_lang2"
-                        style="@style/LanguageLevelStyle"
-                        android:text="Pełna biegłość zawodowa"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    style="@style/WorkersInfoRelativeLayoutStyle">
-
-                    <TextView
-                        android:id="@+id/mtrl_list_item_text_lang3"
-                        style="@style/LanguageNameStyle"
-                        android:text="NIEMIECKI"/>
-
-                    <TextView
-                        android:id="@+id/mtrl_list_item_secondary_text_level3"
-                        android:layout_below="@id/mtrl_list_item_text_lang3"
-                        style="@style/LanguageLevelStyle"
-                        android:text="Biegłość na poziomie zaawansowanym"/>
-
-                </RelativeLayout>
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/activity_header"
                     style="@style/HeadersForWorkersInfoStyle"
                     android:layout_marginTop="@dimen/small_padding"
+                    android:layout_marginBottom="@dimen/small_padding"
                     android:text="@string/activity" />
 
-                <RelativeLayout
-                    style="@style/WorkersInfoRelativeLayoutStyle">
+                <LinearLayout
+                    android:id="@+id/activities_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/layout_margin"
+                    android:layout_marginEnd="@dimen/layout_margin">
 
-                    <TextView
-                        android:id="@+id/activity1"
-                        style="@style/HeaderWorkStyle"
-                        android:text="MojProjekt1" />
-
-                    <TextView
-                        android:id="@+id/link1"
-                        style="@style/HeaderCompanyStyle"
-                        android:text="www.github.com/ap/1"/>
-
-                    <TextView
-                        android:id="@+id/activity1_description"
-                        android:layout_below="@id/activity1"
-                        style="@style/JobDescriptionStyle"
-                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs. sachjsadjdhm abjhacbha cjashfb akjhdabkic." />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    style="@style/WorkersInfoRelativeLayoutStyle">
-
-                    <TextView
-                        android:id="@+id/activity2"
-                        style="@style/HeaderWorkStyle"
-                        android:text="MojProjekt2" />
-
-                    <TextView
-                        android:id="@+id/link2"
-                        style="@style/HeaderCompanyStyle"
-                        android:text="www.github.com/ap/2" />
-
-                    <TextView
-                        android:id="@+id/activity2_description"
-                        android:layout_below="@id/activity2"
-                        style="@style/JobDescriptionStyle"
-                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs." />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    style="@style/WorkersInfoRelativeLayoutStyle">
-
-                    <TextView
-                        android:id="@+id/activity3"
-                        style="@style/HeaderWorkStyle"
-                        android:text="GenialnaPraca" />
-
-                    <TextView
-                        android:id="@+id/link3"
-                        style="@style/HeaderCompanyStyle"
-                        android:text="www.xyz.com/articlez" />
-
-                    <TextView
-                        android:id="@+id/activity3_description"
-                        android:layout_below="@id/activity3"
-                        style="@style/JobDescriptionStyle"
-                        android:text="lsdjs asdncbhjd,sac a,kvj dslkfjchkna aj,fd,kdjsf wa,fbk,jwsdbf,kjew,sd c,jafb,jwesbf,j akjsjadbs."
-                        android:layout_marginBottom="@dimen/small_padding"/>
-
-                </RelativeLayout>
+                </LinearLayout>
 
             </LinearLayout>
-
-
 
         </ScrollView>
     </LinearLayout>

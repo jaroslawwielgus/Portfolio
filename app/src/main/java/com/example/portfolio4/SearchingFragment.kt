@@ -11,6 +11,10 @@ import androidx.navigation.findNavController
 import com.example.portfolio4.databinding.FragmentSearchingBinding
 
 class SearchingFragment: Fragment() {
+    companion object {
+        var foundUser: User? = null
+    }
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding: FragmentSearchingBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_searching, container, false)
 
@@ -22,6 +26,7 @@ class SearchingFragment: Fragment() {
             v.findNavController().navigate(SearchingFragmentDirections.actionSearchingFragmentToProfileFragment())
         }
 
+        foundUser =
         return binding.root
     }
 

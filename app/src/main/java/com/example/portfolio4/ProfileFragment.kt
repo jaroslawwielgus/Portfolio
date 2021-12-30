@@ -16,11 +16,25 @@ import com.example.portfolio4.databinding.FragmentProfileBinding
 import org.w3c.dom.Text
 
 class ProfileFragment: Fragment() {
-    val user: User? = LogInFragment.foundUser
+    //val user: User? = LogInFragment.loggedUser
+    //val user2: User?= SearchingFragment.foundUser
+    //val usersList: List<User>? = LogInFragment.usersList
+    val user: User?= MainActivity.user
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding: FragmentProfileBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_profile, container, false)
+        /*
+        val bundle: Bundle? = arguments
+        val i: Int? = bundle?.getInt("klucz")
 
+        if (usersList != null) {
+            binding.user = i?.let { usersList.get(it) }
+        } else {
+            binding.user = null
+        }
+
+        val user: User? = binding.user
+        */
         binding.user = user
 
         //add user info to layout

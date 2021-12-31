@@ -1,14 +1,17 @@
 package com.example.portfolio4
 
 import android.content.Context
+import android.graphics.drawable.Drawable
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.core.view.marginTop
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -37,8 +40,19 @@ class ProfileFragment: Fragment() {
         */
         binding.user = user
 
+
         //add user info to layout
         if (user != null) {
+
+            val imgId: Int = resources.getIdentifier(user.photo, "drawable", "com.example.portfolio3")
+            binding.profileImage.setImageResource(imgId)
+             /* tez dziala:
+            val uri: String = user.photo  // where myresource (without the extension) is the file
+            val imageResource: Int = getResources().getIdentifier(uri, null, "com.example.portfolio3");
+            val res: Drawable = getResources().getDrawable(imageResource);
+            binding.profileImage.setImageDrawable(res);
+              */
+
             for (i in user.jobs) {
                 /*
                 val relativeLayout = RelativeLayout(context)
@@ -50,16 +64,21 @@ class ProfileFragment: Fragment() {
                 val param1 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 jobView.layoutParams = param1
                 jobView.text = i.title
+                jobView.textSize=18F
+                //jobView.setTextColor(getResources().getColor(R.color.black))
+                jobView.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
 
                 val companyView = TextView(context)
                 val param2 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 companyView.layoutParams = param2
                 companyView.text = i.company
+                companyView.textSize=18F
 
                 val descriptionView = TextView(context)
                 val param3 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 descriptionView.layoutParams = param3
                 descriptionView.text = i.description
+                descriptionView.textSize=14F
                 descriptionView.setPadding(0, 0 , 0, 16)
 
                 binding.apply {
@@ -74,16 +93,20 @@ class ProfileFragment: Fragment() {
                 val param1 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 academyView.layoutParams = param1
                 academyView.text = i.academy
+                academyView.textSize=18F
+                academyView.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
 
                 val fieldOfStudyView = TextView(context)
                 val param2 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 fieldOfStudyView.layoutParams = param2
                 fieldOfStudyView.text = i.field_of_study
+                fieldOfStudyView.textSize=18F
 
                 val descriptionView = TextView(context)
                 val param3 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 descriptionView.layoutParams = param3
                 descriptionView.text = i.description
+                descriptionView.textSize=14F
                 descriptionView.setPadding(0, 0 , 0, 16)
 
                 binding.apply {
@@ -98,11 +121,14 @@ class ProfileFragment: Fragment() {
                 val param1 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 langView.layoutParams = param1
                 langView.text = i.lang
+                langView.textSize=16F
+                langView.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
 
                 val levelView = TextView(context)
                 val param2 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 levelView.layoutParams = param2
                 levelView.text = i.level
+                levelView.textSize=16F
                 levelView.setPadding(0, 0 , 0, 16)
 
                 binding.apply {
@@ -116,16 +142,20 @@ class ProfileFragment: Fragment() {
                 val param1 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 titleView.layoutParams = param1
                 titleView.text = i.title
+                titleView.textSize=18F
+                titleView.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
 
                 val linkView = TextView(context)
                 val param2 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 linkView.layoutParams = param2
                 linkView.text = i.link
+                linkView.textSize=14F
 
                 val descriptionView = TextView(context)
                 val param3 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 descriptionView.layoutParams = param3
                 descriptionView.text = i.description
+                descriptionView.textSize=14F
                 descriptionView.setPadding(0, 0 , 0, 16)
 
                 binding.apply {

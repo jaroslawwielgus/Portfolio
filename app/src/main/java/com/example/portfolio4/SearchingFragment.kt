@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
@@ -48,6 +49,7 @@ class SearchingFragment: Fragment() {
                         workerButton.layoutParams = params
                         workerButton.text = searchedUser.uppercase()
                         workerButton.textAlignment = View.TEXT_ALIGNMENT_CENTER
+                        workerButton.textSize=16F
                         workerButton.setPadding(0, 16 , 0, 16)
 
                         //create listener
@@ -71,6 +73,7 @@ class SearchingFragment: Fragment() {
                     val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                     errorView.layoutParams = params
                     errorView.text = "Nie znaleziono pracownika"
+                    errorView.textSize=20F
                     errorView.textAlignment = View.TEXT_ALIGNMENT_CENTER
                     errorView.setPadding(0, 16 , 0, 16)
 

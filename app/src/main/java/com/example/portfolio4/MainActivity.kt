@@ -2,6 +2,7 @@ package com.example.portfolio4
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -102,17 +103,19 @@ class MainActivity : AppCompatActivity() {
         val activity2_u4 = Activity(12, "Moja stronka", "www.github.com/aoo/2", "Asdnkjfdskc akjsfhulid kjasfhdsal sakfhdahflda aksjdfdsakj ajdfjbdsjbfbda")
         var activities_u4 = listOf<Activity>(activity1_u4, activity2_u4)
 
+
+
         //creating users
-        user1 = User(1, "Jan", "Kowalski", "e@e.com", "pass", "user1", "ajsdb ajdbf,shj abd,fs ajdb,jhsdb,djhsabd,abfs  as,dbf,sdjha d,hbs e,jsdbewkj,sb cajkdfbk,jfbewdusifkjbews ceuwkjbfcuewkdjsb",
+        user1 = User(1, "Jan", "Kowalski", "e@e.com", "pass", "profile1_image", "ajsdb ajdbf,shj abd,fs ajdb,jhsdb,djhsabd,abfs  as,dbf,sdjha d,hbs e,jsdbewkj,sb cajkdfbk,jfbewdusifkjbews ceuwkjbfcuewkdjsb",
             jobs_u1, universities_u1, languages_u1, activities_u1
         )
-        user2 = User(2, "Jan", "Kowalski", "e@e2.com", "pass2", "user2", "asdcfs asjfd,s kjasdfbds,j akjdsf,dsjna a,jdb,asjbfa kjad,akjfhlewkfhjew kwej,jfuewkjfb wekjfhnlweflkwe fuewkhliuwekhlfbuwe qhuwjfluiwesukf akfhweln wuefhnwel",
+        user2 = User(2, "Jan", "Kowalski", "e@e2.com", "pass2", "profile2_image", "asdcfs asjfd,s kjasdfbds,j akjdsf,dsjna a,jdb,asjbfa kjad,akjfhlewkfhjew kwej,jfuewkjfb wekjfhnlweflkwe fuewkhliuwekhlfbuwe qhuwjfluiwesukf akfhweln wuefhnwel",
             jobs_u2, universities_u2, languages_u2, activities_u2
         )
-        user3 = User(3, "Jakub", "Kowalski", "e@e3.com", "pass3", "user3", "Asfds sdgvbfd hb,dsjmcv ajhsfbksdyjmh vs,jfbkusd,jbv, s,ui,jkes,dbfkujwbsdkjv, dsnbuewudskfhjvewkdjsfhjbvkes kwejhfiukjs skfjhksdjv skjfhskjv  iusfvsukjhfuis skjfhkshu uhskfhjskjreioutwio .,afnkbkwuys wesv",
+        user3 = User(3, "Jakub", "Kowalski", "e@e3.com", "pass3", "profile3_image", "Asfds sdgvbfd hb,dsjmcv ajhsfbksdyjmh vs,jfbkusd,jbv, s,ui,jkes,dbfkujwbsdkjv, dsnbuewudskfhjvewkdjsfhjbvkes kwejhfiukjs skfjhksdjv skjfhskjv  iusfvsukjhfuis skjfhkshu uhskfhjskjreioutwio .,afnkbkwuys wesv",
             jobs_u3, universities_u3, languages_u3, activities_u3
         )
-        user4 = User(4, "Michał", "Nowak", "e@e4.com", "pass4", "user4", "AKJbjhx,cba, kjndsbksu, kudjs,bvu,js uwjfdshkusud jsbusdkj alidoiqwefhgryek iulwefkjbwekj kwljfbiulweuhf,ew wjkfluiwefu iuhwlfhbw uwelhfulwufhwe wiuhleflweluifhluwe weilujflwuhf uhwfhweilufhw iuhwflhew ulwefhlwefhu wlufhluewu",
+        user4 = User(4, "Tomasz", "Nowak", "e@e4.com", "pass4", "profile4_image", "AKJbjhx,cba, kjndsbksu, kudjs,bvu,js uwjfdshkusud jsbusdkj alidoiqwefhgryek iulwefkjbwekj kwljfbiulweuhf,ew wjkfluiwefu iuhwlfhbw uwelhfulwufhwe wiuhleflweluifhluwe weilujflwuhf uhwfhweilufhw iuhwflhew ulwefhlwefhu wlufhluewu",
             jobs_u4, universities_u4, languages_u4, activities_u4
         )
         //adding users to list

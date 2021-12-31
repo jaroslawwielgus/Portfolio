@@ -27,23 +27,24 @@
 
             </Button>
 
-            <ImageView
-                android:id="@+id/search_image"
+            <Button
+                android:id="@+id/search_button"
                 android:layout_width="wrap_content"
                 android:layout_height="55dp"
                 android:layout_marginTop="32dp"
                 android:layout_toEndOf="@+id/me_button"
-                android:contentDescription="@string/search_category"
-                app:srcCompat="@android:drawable/ic_search_category_default">
+                android:background="@android:drawable/ic_search_category_default"
+                android:contentDescription="@string/search_category">
 
-            </ImageView>
+            </Button>
 
             <EditText
+                android:id="@+id/searching_text"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="10dp"
-                android:layout_toEndOf="@+id/search_image"
+                android:layout_toEndOf="@+id/search_button"
                 android:autofillHints="no"
                 android:background="@color/white"
                 android:fontFamily="@font/roboto_light"
@@ -66,126 +67,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/worker_name1"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name2"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name3"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name4"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name5"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name6"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name7"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name8"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name9"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name10"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name11"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name12"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name13"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name14"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
-
-                <Button
-                    android:id="@+id/worker_name15"
-                    style="@style/FoundWorkersStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jan Kowalski">
-                </Button>
 
             </LinearLayout>
         </ScrollView>

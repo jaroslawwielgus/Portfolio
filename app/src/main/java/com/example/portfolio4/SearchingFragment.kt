@@ -33,6 +33,7 @@ class SearchingFragment: Fragment() {
         }
 
         binding.searchButton.setOnClickListener {v: View ->
+            binding.layout1.removeAllViews()
             if (usersList != null) {
                 var isFound: Boolean = false
                 val searchedUser: String = binding.searchingText.text.toString()

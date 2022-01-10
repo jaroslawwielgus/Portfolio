@@ -1,10 +1,5 @@
 package com.example.portfolio4
 
-import android.content.Context
-import android.graphics.Color
-import android.graphics.drawable.Drawable
-import android.icu.lang.UCharacter
-import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,33 +9,15 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
-import androidx.core.view.marginBottom
-import androidx.core.view.marginTop
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.portfolio4.databinding.FragmentProfileBinding
-import org.w3c.dom.Text
 
 class ProfileFragment: Fragment() {
-    //val user: User? = LogInFragment.loggedUser
-    //val user2: User?= SearchingFragment.foundUser
-    //val usersList: List<User>? = LogInFragment.usersList
     val user: User?= MainActivity.user
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding: FragmentProfileBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_profile, container, false)
-        /*
-        val bundle: Bundle? = arguments
-        val i: Int? = bundle?.getInt("klucz")
-
-        if (usersList != null) {
-            binding.user = i?.let { usersList.get(it) }
-        } else {
-            binding.user = null
-        }
-
-        val user: User? = binding.user
-        */
         binding.user = user
 
 

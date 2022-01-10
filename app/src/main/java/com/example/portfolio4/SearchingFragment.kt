@@ -46,11 +46,13 @@ class SearchingFragment: Fragment() {
                         //create button
                         val workerButton = Button(context)
                         val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
+                        params.setMargins(0, 16, 0, 16)
                         workerButton.layoutParams = params
                         workerButton.text = searchedUser.uppercase()
                         workerButton.textAlignment = View.TEXT_ALIGNMENT_CENTER
                         workerButton.textSize=16F
-                        workerButton.setPadding(0, 16 , 0, 16)
+                        workerButton.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.purple_500))
+                        //workerButton.setPadding(0, 16 , 0, 16)
 
                         //create listener
                         binding.apply {
@@ -75,6 +77,7 @@ class SearchingFragment: Fragment() {
                     errorView.text = "Nie znaleziono pracownika"
                     errorView.textSize=20F
                     errorView.textAlignment = View.TEXT_ALIGNMENT_CENTER
+                    errorView.setTextColor(ContextCompat.getColor(requireContext(), R.color.red))
                     errorView.setPadding(0, 16 , 0, 16)
 
                     binding.apply {

@@ -20,9 +20,10 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_round_shape"
+                android:fontFamily="@font/roboto_medium"
                 android:text="@string/me"
                 android:textColor="@color/black"
-                android:textSize="20sp">
+                android:textSize="@dimen/logging_font">
 
             </Button>
 
@@ -34,10 +35,7 @@
                 android:layout_marginTop="42dp"
                 android:layout_toEndOf="@+id/me_button"
                 android:background="@android:drawable/ic_search_category_default"
-                android:backgroundTintMode="multiply"
-                android:contentDescription="@string/search_category"
-                android:shadowColor="@color/white"
-                android:textColorHint="@color/white">
+                android:contentDescription="@string/search_category">
 
             </Button>
 
@@ -50,12 +48,13 @@
                 android:layout_toEndOf="@+id/search_button"
                 android:autofillHints="no"
                 android:background="@color/white"
-                android:fontFamily="@font/roboto_light"
+                android:fontFamily="@font/roboto_light_medium"
                 android:hint="@string/search"
-                android:textSize="20sp"
-                android:textColorHint="@color/light_gray"
                 android:inputType="textPersonName"
-                android:textAlignment="center">
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/logging_font"
+                app:hintTextAppearance="@style/TextAppearance.MaterialComponents.Caption">
 
             </EditText>
         </RelativeLayout>

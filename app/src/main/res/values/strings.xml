@@ -16,4 +16,5 @@
     <string name="education"><u>Wykształcenie</u></string>
     <string name="activity"><u>Aktywność</u></string>
     <string name="languages"><u>Języki</u></string>
+    <string name="me">Me</string>
 </resources>

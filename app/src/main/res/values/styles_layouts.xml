@@ -9,4 +9,10 @@
         <item name="android:layout_marginEnd">@dimen/small_padding</item>
     </style>
 
+    <style name="GradientBackgroundOfLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:background">@color/navy_blue_gradient</item>
+    </style>
+
 </resources>

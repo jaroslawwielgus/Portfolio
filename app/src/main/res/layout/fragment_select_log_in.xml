@@ -13,33 +13,24 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/EportfolioTextStyle"
             android:layout_marginTop="150dp"
-            android:fontFamily="@font/roboto_bold_italic"
-            android:text="@string/eportfolio"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="36sp" />
+            android:text="@string/eportfolio" />
 
         <Button
             android:id="@+id/login_button"
-            style="@style/LoggingOptionsStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/LoggingConfirmStyle"
             android:layout_marginTop="150dp"
-            android:backgroundTint="@color/white"
             android:text="@string/logging"
+            android:textAppearance="@style/TextAppearance.AppCompat"
             app:cornerRadius="50sp" />
 
         <Button
             android:id="@+id/register_button"
-            style="@style/LoggingOptionsStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/LoggingConfirmStyle"
             android:layout_marginTop="40dp"
-            android:backgroundTint="@color/white"
             android:text="@string/register"
+            android:textAppearance="@style/TextAppearance.AppCompat"
             app:cornerRadius="50sp" />
 
     </LinearLayout>

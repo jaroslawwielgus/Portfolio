@@ -17,6 +17,7 @@ import org.w3c.dom.Text
 
 class SearchingFragment: Fragment() {
     val usersList: List<User>? = MainActivity.usersList
+    //val user: User?= MainActivity.user
     private lateinit var chosenUser: User
     private lateinit var loggedUser: User
     /*
@@ -28,6 +29,15 @@ class SearchingFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding: FragmentSearchingBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_searching, container, false)
+
+        //add user photo
+        /*
+        if (user != null) {
+            val imgId: Int = resources.getIdentifier(user.photo, "drawable", "com.example.portfolio3")
+            binding.meButton.setBackgroundResource(imgId) //nie można
+        }
+
+         */
 
         binding.meButton.setOnClickListener { v: View ->
             v.findNavController().navigate(SearchingFragmentDirections.actionSearchingFragmentToProfileFragment())
@@ -46,7 +56,7 @@ class SearchingFragment: Fragment() {
                         //create button
                         val workerButton = Button(context)
                         val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
-                        params.setMargins(0, 16, 0, 16)
+                        params.setMargins(0, 16, 0, 0)
                         workerButton.layoutParams = params
                         workerButton.text = searchedUser.uppercase()
                         workerButton.textAlignment = View.TEXT_ALIGNMENT_CENTER

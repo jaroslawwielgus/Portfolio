@@ -1,7 +1,9 @@
 package com.example.portfolio4
 
 import android.content.Context
+import android.graphics.Color
 import android.graphics.drawable.Drawable
+import android.icu.lang.UCharacter
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,6 +14,7 @@ import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.core.view.marginBottom
 import androidx.core.view.marginTop
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -73,18 +76,27 @@ class ProfileFragment: Fragment() {
                 companyView.layoutParams = param2
                 companyView.text = i.company
                 companyView.textSize=18F
+                companyView.setTextColor(ContextCompat.getColor(requireContext(), R.color.gray))
 
                 val descriptionView = TextView(context)
                 val param3 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
+                param3.setMargins(0, 0, 0, 16)
                 descriptionView.layoutParams = param3
                 descriptionView.text = i.description
                 descriptionView.textSize=14F
-                descriptionView.setPadding(0, 0 , 0, 16)
+                descriptionView.setTextColor(ContextCompat.getColor(requireContext(), R.color.gray))
+
+                val lineView = View(context)
+                val param4 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 3)
+                param4.setMargins(0, 0, 0, 24)
+                lineView.layoutParams = param4
+                lineView.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.light_light_gray))
 
                 binding.apply {
                     jobsLayout.addView(jobView)
                     jobsLayout.addView(companyView)
                     jobsLayout.addView(descriptionView)
+                    jobsLayout.addView(lineView)
                 }
             }
 
@@ -101,18 +113,27 @@ class ProfileFragment: Fragment() {
                 fieldOfStudyView.layoutParams = param2
                 fieldOfStudyView.text = i.field_of_study
                 fieldOfStudyView.textSize=18F
+                fieldOfStudyView.setTextColor(ContextCompat.getColor(requireContext(), R.color.gray))
 
                 val descriptionView = TextView(context)
                 val param3 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
+                param3.setMargins(0, 0, 0, 16)
                 descriptionView.layoutParams = param3
                 descriptionView.text = i.description
                 descriptionView.textSize=14F
-                descriptionView.setPadding(0, 0 , 0, 16)
+                descriptionView.setTextColor(ContextCompat.getColor(requireContext(), R.color.gray))
+
+                val lineView = View(context)
+                val param4 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 3)
+                param4.setMargins(0, 0, 0, 24)
+                lineView.layoutParams = param4
+                lineView.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.light_light_gray))
 
                 binding.apply {
                     educationLayout.addView(academyView)
                     educationLayout.addView(fieldOfStudyView)
                     educationLayout.addView(descriptionView)
+                    educationLayout.addView(lineView)
                 }
             }
 
@@ -126,14 +147,22 @@ class ProfileFragment: Fragment() {
 
                 val levelView = TextView(context)
                 val param2 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
+                param2.setMargins(0, 0, 0, 12)
                 levelView.layoutParams = param2
                 levelView.text = i.level
                 levelView.textSize=16F
-                levelView.setPadding(0, 0 , 0, 16)
+
+                val lineView = View(context)
+                val param3 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 3)
+                param3.setMargins(0, 0, 0, 24)
+                lineView.layoutParams = param3
+                lineView.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.light_light_gray))
+
 
                 binding.apply {
                     languagesLayout.addView(langView)
                     languagesLayout.addView(levelView)
+                    languagesLayout.addView(lineView)
                 }
             }
 
@@ -150,18 +179,27 @@ class ProfileFragment: Fragment() {
                 linkView.layoutParams = param2
                 linkView.text = i.link
                 linkView.textSize=14F
+                linkView.setTextColor(ContextCompat.getColor(requireContext(), R.color.gray))
 
                 val descriptionView = TextView(context)
                 val param3 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
+                param3.setMargins(0, 0, 0, 16)
                 descriptionView.layoutParams = param3
                 descriptionView.text = i.description
                 descriptionView.textSize=14F
-                descriptionView.setPadding(0, 0 , 0, 16)
+                descriptionView.setTextColor(ContextCompat.getColor(requireContext(), R.color.gray))
+
+                val lineView = View(context)
+                val param4 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 3)
+                param4.setMargins(0, 0, 0, 24)
+                lineView.layoutParams = param4
+                lineView.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.light_light_gray))
 
                 binding.apply {
                     activitiesLayout.addView(titleView)
                     activitiesLayout.addView(linkView)
                     activitiesLayout.addView(descriptionView)
+                    activitiesLayout.addView(lineView)
                 }
             }
         }

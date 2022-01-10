@@ -86,8 +86,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/small_padding"
                     android:fontFamily="@font/roboto_light"
-                    android:paddingStart="@dimen/padding"
-                    android:paddingEnd="@dimen/padding"
+                    android:layout_marginStart="@dimen/big_layout_margin"
+                    android:layout_marginEnd="@dimen/layout_margin"
                     android:text="@{user.my_description}"
                     android:textColor="@color/black"
                     android:textSize="16sp"
@@ -105,7 +105,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginStart="@dimen/layout_margin"
+                    android:layout_marginStart="@dimen/big_layout_margin"
                     android:layout_marginEnd="@dimen/layout_margin">
 
                 </LinearLayout>
@@ -122,7 +122,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginStart="@dimen/layout_margin"
+                    android:layout_marginStart="@dimen/big_layout_margin"
                     android:layout_marginEnd="@dimen/layout_margin">
 
                 </LinearLayout>
@@ -139,7 +139,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginStart="@dimen/layout_margin"
+                    android:layout_marginStart="@dimen/big_layout_margin"
                     android:layout_marginEnd="@dimen/layout_margin">
 
                 </LinearLayout>
@@ -156,7 +156,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginStart="@dimen/layout_margin"
+                    android:layout_marginStart="@dimen/big_layout_margin"
                     android:layout_marginEnd="@dimen/layout_margin">
 
                 </LinearLayout>

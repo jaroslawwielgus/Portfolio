@@ -12,6 +12,7 @@
     <color name="light_navy_blue">#4676E7</color>
     <color name="gray">#808080</color>
     <color name="light_gray">#a0a0a0</color>
+    <color name="light_light_gray">#d0d0d0</color>
     <color name="red">#C00D00</color>
     <color name="purple_helper_color">#6200EE</color>
 </resources>

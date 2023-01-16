@@ -20,13 +20,12 @@ class ProfileFragment: Fragment() {
         val binding: FragmentProfileBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_profile, container, false)
         binding.user = user
 
-
         //add user info to layout
         if (user != null) {
-
             val imgId: Int = resources.getIdentifier(user.photo, "drawable", "com.example.portfolio3")
             binding.profileImage.setImageResource(imgId)
-             /* tez dziala:
+
+            /* tez dziala:
             val uri: String = user.photo  // where myresource (without the extension) is the file
             val imageResource: Int = getResources().getIdentifier(uri, null, "com.example.portfolio3");
             val res: Drawable = getResources().getDrawable(imageResource);
@@ -34,18 +33,11 @@ class ProfileFragment: Fragment() {
               */
 
             for (i in user.jobs) {
-                /*
-                val relativeLayout = RelativeLayout(context)
-                val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
-                relativeLayout.layoutParams = params
-                relativeLayout.setPadding(16, 8, 8, 0)
-                */
                 val jobView = TextView(context)
                 val param1 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 jobView.layoutParams = param1
                 jobView.text = i.title
                 jobView.textSize=18F
-                //jobView.setTextColor(getResources().getColor(R.color.black))
                 jobView.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
 
                 val companyView = TextView(context)

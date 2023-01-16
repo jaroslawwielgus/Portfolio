@@ -17,27 +17,11 @@ import org.w3c.dom.Text
 
 class SearchingFragment: Fragment() {
     val usersList: List<User>? = MainActivity.usersList
-    //val user: User?= MainActivity.user
     private lateinit var chosenUser: User
     private lateinit var loggedUser: User
-    /*
-    companion object {
-        var foundUser: User? = null
-    }
-     */
-
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding: FragmentSearchingBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_searching, container, false)
-
-        //add user photo
-        /*
-        if (user != null) {
-            val imgId: Int = resources.getIdentifier(user.photo, "drawable", "com.example.portfolio3")
-            binding.meButton.setBackgroundResource(imgId) //nie można
-        }
-
-         */
 
         binding.meButton.setOnClickListener { v: View ->
             v.findNavController().navigate(SearchingFragmentDirections.actionSearchingFragmentToProfileFragment())
@@ -48,12 +32,10 @@ class SearchingFragment: Fragment() {
             if (usersList != null) {
                 var isFound: Boolean = false
                 val searchedUser: String = binding.searchingText.text.toString()
-                //var foundUsers: MutableList<User> = MutableList<User>(4)
+
                 for (i in usersList) {
                     if (i.name + " " + i.surname == searchedUser) {
                         isFound = true
-                        //foundUsers.add(i)
-                        //create button
                         val workerButton = Button(context)
                         val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                         params.setMargins(0, 16, 0, 0)
@@ -62,17 +44,13 @@ class SearchingFragment: Fragment() {
                         workerButton.textAlignment = View.TEXT_ALIGNMENT_CENTER
                         workerButton.textSize=16F
                         workerButton.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.purple_500))
-                        //workerButton.setPadding(0, 16 , 0, 16)
-
                         //create listener
                         binding.apply {
                             layout1.addView(workerButton)
-
                             workerButton.setOnClickListener {
                                 chosenUser = i
                                 loggedUser = MainActivity.user!!
                                 MainActivity.user = chosenUser
-
                                 v.findNavController().navigate(SearchingFragmentDirections.actionSearchingFragmentToProfileFragment())
                                 MainActivity.user = loggedUser
                             }
@@ -80,6 +58,7 @@ class SearchingFragment: Fragment() {
 
                     }
                 }
+                
                 if (!isFound) {
                     val errorView = TextView(context)
                     val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
@@ -96,29 +75,6 @@ class SearchingFragment: Fragment() {
                 }
             }
         }
-
-        /*
-        binding.workerName1.setOnClickListener { v: View ->
-            /*
-            if (usersList != null) {
-                val bundle: Bundle = Bundle()
-                bundle.putInt("klucz", 2)
-                foundUser = usersList.get(2)
-                val profileFragment: ProfileFragment = ProfileFragment()
-                profileFragment.arguments=bundle
-            }
-             */
-            if (usersList != null) {
-                chosenUser = usersList.get(2)
-                loggedUser = MainActivity.user!!
-                MainActivity.user = chosenUser
-            }
-            v.findNavController().navigate(SearchingFragmentDirections.actionSearchingFragmentToProfileFragment())
-            MainActivity.user = loggedUser
-        }
-         */
-
-
 
         return binding.root
     }

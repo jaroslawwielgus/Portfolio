@@ -136,14 +136,5 @@ class MainActivity : AppCompatActivity() {
                 AppBarConfiguration(graph)
             )
         }
-
-        // NavigationUI.setupWithNavController(toolbar)
-        //val navController = findNavController(R.id.myNavHostFragment)
-        //val appBarConfiguration = AppBarConfiguration(navController.graph)
-        //findViewById<Toolbar>(R.id.toolbar)
-            //.setupWithNavController(navController, appBarConfiguration)
-
-
-        //kjh,
     }
 }
